@@ -11,6 +11,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.pbi-container {
+				position: relative;
+				overflow: hidden;
+				padding-top: 56.25%; /* 16:9 Aspect Ratio */
+			}
+			.pbi-iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				border: none;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -69,7 +84,6 @@
 							<section class="posts">
 								<article>
 									<header>
-									
 										<h2><a href="https://github.com/Christopherkabwe/layoff-data-eda-sql">Data Exploration in SQL<br />
 										</a></h2>
 									</header>
@@ -87,7 +101,25 @@
 									<a href="#" class="image fit"><img src="images/Tab.png" alt="" /></a>
 									<p>This holds public Tableau Dashboards.</p>
 									<ul class="actions special">
-										<li><a href="#" class="button">View Project</P></a></li>
+										<li><a href="#" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<h2><a href="#">USD to ZMW Exchange Rate<br />
+										</a></h2>
+									</header>
+									<div class="pbi-container">
+										<iframe 
+											class="pbi-iframe"
+											title="USDZMW Exchange Rate"
+											src="https://app.powerbi.com/reportEmbed?reportId=19e3fa32-fa33-43c5-9514-ee5994981085&appId=b25e3b32-5914-492c-8a38-c444308ea7d1&autoAuth=true&ctid=c3439750-6726-4ce0-a164-273c4f45fcfa" 
+											allowFullScreen="true">
+										</iframe>
+									</div>
+									<p>Interactive dashboard showing USD to Zambian Kwacha exchange rate trends.</p>
+									<ul class="actions special">
+										<li><a href="https://app.powerbi.com/reportEmbed?reportId=19e3fa32-fa33-43c5-9514-ee5994981085&appId=b25e3b32-5914-492c-8a38-c444308ea7d1&autoAuth=true&ctid=c3439750-6726-4ce0-a164-273c4f45fcfa" class="button">View Full Screen</a></li>
 									</ul>
 								</article>
 								<article>
@@ -112,10 +144,11 @@
 										<li><a href="#" class="button">View Projects</a></li>
 									</ul>
 								</article>
-
+							</section>
 
 						<!-- Footer -->
-							
+							<footer>
+								<!-- Pagination would go here if needed -->
 							</footer>
 
 					</div>
